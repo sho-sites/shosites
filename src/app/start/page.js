@@ -114,7 +114,7 @@ export default function StartPage() {
                 <div className="pt-2">
                   <button
                     type="submit"
-                    className="inline-flex h-11 items-center justify-center rounded-full bg-[--color-accent] px-5 text-sm font-medium text-black transition hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[--color-accent] ring-offset-black"
+                    className="inline-flex h-11 items-center justify-center rounded-full bg-[--color-foreground] px-5 text-sm font-medium text-[--color-background] transition hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[--color-accent] ring-offset-black"
                   >
                     Send
                   </button>
