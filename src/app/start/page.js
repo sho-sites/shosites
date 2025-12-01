@@ -6,136 +6,134 @@ import MotionFade from "@/components/MotionFade";
 import { useState } from "react";
 
 export default function StartPage() {
-	const [name, setName] = useState("");
-	const [org, setOrg] = useState("");
-	const [email, setEmail] = useState("");
-	const [goals, setGoals] = useState("");
-	const [timeline, setTimeline] = useState("");
+  const [name, setName] = useState("");
+  const [org, setOrg] = useState("");
+  const [email, setEmail] = useState("");
+  const [goals, setGoals] = useState("");
+  const [timeline, setTimeline] = useState("");
 
-	function handleSubmit(e) {
-		e.preventDefault();
-		const subject = encodeURIComponent("sho sites project inquiry");
-		const body = encodeURIComponent(
-			[
-				`Name: ${name}`,
-				`Organization: ${org}`,
-				`Email: ${email}`,
-				`Goals: ${goals}`,
-				`Timeline: ${timeline}`,
-			].join("\n")
-		);
-		window.location.href = `mailto:shourya.batra@gmail.com?subject=${subject}&body=${body}`;
-	}
+  function handleSubmit(e) {
+    e.preventDefault();
+    const subject = encodeURIComponent("sho sites project inquiry");
+    const body = encodeURIComponent(
+      [
+        `Name: ${name}`,
+        `Organization: ${org}`,
+        `Email: ${email}`,
+        `Goals: ${goals}`,
+        `Timeline: ${timeline}`,
+      ].join("\n")
+    );
+    window.location.href = `mailto:shourya.batra@gmail.com?subject=${subject}&body=${body}`;
+  }
 
-	return (
-		<main>
-			<section>
-				<Container className="py-16">
-					<MotionFade inView={false}>
-						<h1 className="text-3xl font-semibold tracking-tight">
-							Start a project
-						</h1>
-						<p className="mt-2 max-w-2xl text-white/70">
-							Share a few details—I'll reply with a checklist and quick next
-							steps.
-						</p>
-					</MotionFade>
-					<MotionFade delay={0.05} inView={false}>
-						<Card className="mt-8">
-							<form onSubmit={handleSubmit} className="grid gap-5">
-								<div className="grid gap-2">
-									<label htmlFor="name" className="text-sm">
-										Name
-									</label>
-									<input
-										id="name"
-										type="text"
-										required
-										value={name}
-										onChange={(e) => setName(e.target.value)}
-										className="h-11 rounded-lg border border-white/10 bg-black/30 px-3 outline-none ring-[--color-accent] placeholder:text-white/40 focus:ring-2"
-										placeholder="Your name"
-									/>
-								</div>
-								<div className="grid gap-2">
-									<label htmlFor="org" className="text-sm">
-										Organization
-									</label>
-									<input
-										id="org"
-										type="text"
-										value={org}
-										onChange={(e) => setOrg(e.target.value)}
-										className="h-11 rounded-lg border border-white/10 bg-black/30 px-3 outline-none ring-[--color-accent] placeholder:text-white/40 focus:ring-2"
-										placeholder="Org/club/small business"
-									/>
-								</div>
-								<div className="grid gap-2">
-									<label htmlFor="email" className="text-sm">
-										Email
-									</label>
-									<input
-										id="email"
-										type="email"
-										required
-										value={email}
-										onChange={(e) => setEmail(e.target.value)}
-										className="h-11 rounded-lg border border-white/10 bg-black/30 px-3 outline-none ring-[--color-accent] placeholder:text-white/40 focus:ring-2"
-										placeholder="name@example.com"
-									/>
-								</div>
-								<div className="grid gap-2">
-									<label htmlFor="goals" className="text-sm">
-										What do you need the site to do?
-									</label>
-									<textarea
-										id="goals"
-										required
-										value={goals}
-										onChange={(e) => setGoals(e.target.value)}
-										rows={5}
-										className="rounded-lg border border-white/10 bg-black/30 px-3 py-2 outline-none ring-[--color-accent] placeholder:text-white/40 focus:ring-2"
-										placeholder="A few bullets are great—pages/sections, examples you like, etc."
-									/>
-								</div>
-								<div className="grid gap-2">
-									<label htmlFor="timeline" className="text-sm">
-										Timeline
-									</label>
-									<input
-										id="timeline"
-										type="text"
-										value={timeline}
-										onChange={(e) => setTimeline(e.target.value)}
-										className="h-11 rounded-lg border border-white/10 bg-black/30 px-3 outline-none ring-[--color-accent] placeholder:text-white/40 focus:ring-2"
-										placeholder="E.g., launch in ~2 weeks"
-									/>
-								</div>
-								<div className="pt-2">
-									<button
-										type="submit"
-										className="inline-flex h-11 items-center justify-center rounded-full bg-[--color-accent] px-5 text-sm font-medium text-black transition hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[--color-accent] ring-offset-black"
-									>
-										Send
-									</button>
-								</div>
-							</form>
-							<p className="mt-4 text-sm text-white/60">
-								Prefer email? Write to{" "}
-								<a
-									href="mailto:shourya.batra@gmail.com"
-									className="text-[--color-accent]"
-								>
-									shourya.batra@gmail.com
-								</a>
-								.
-							</p>
-						</Card>
-					</MotionFade>
-				</Container>
-			</section>
-		</main>
-	);
+  return (
+    <main>
+      <section>
+        <Container className="py-16">
+          <MotionFade inView={false}>
+            <h1 className="text-3xl font-semibold tracking-tight">
+              Start a project
+            </h1>
+            <p className="mt-2 max-w-2xl text-white/70">
+              Share a few details—I'll reply with a checklist and quick next
+              steps.
+            </p>
+          </MotionFade>
+          <MotionFade delay={0.05} inView={false}>
+            <Card className="mt-8">
+              <form onSubmit={handleSubmit} className="grid gap-5">
+                <div className="grid gap-2">
+                  <label htmlFor="name" className="text-sm">
+                    Name
+                  </label>
+                  <input
+                    id="name"
+                    type="text"
+                    required
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    className="h-11 rounded-lg border border-white/10 bg-black/30 px-3 outline-none ring-[--color-accent] placeholder:text-white/40 focus:ring-2"
+                    placeholder="Your name"
+                  />
+                </div>
+                <div className="grid gap-2">
+                  <label htmlFor="org" className="text-sm">
+                    Organization
+                  </label>
+                  <input
+                    id="org"
+                    type="text"
+                    value={org}
+                    onChange={(e) => setOrg(e.target.value)}
+                    className="h-11 rounded-lg border border-white/10 bg-black/30 px-3 outline-none ring-[--color-accent] placeholder:text-white/40 focus:ring-2"
+                    placeholder="Org/club/business"
+                  />
+                </div>
+                <div className="grid gap-2">
+                  <label htmlFor="email" className="text-sm">
+                    Email
+                  </label>
+                  <input
+                    id="email"
+                    type="email"
+                    required
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="h-11 rounded-lg border border-white/10 bg-black/30 px-3 outline-none ring-[--color-accent] placeholder:text-white/40 focus:ring-2"
+                    placeholder="name@example.com"
+                  />
+                </div>
+                <div className="grid gap-2">
+                  <label htmlFor="goals" className="text-sm">
+                    What do you need the site to do?
+                  </label>
+                  <textarea
+                    id="goals"
+                    required
+                    value={goals}
+                    onChange={(e) => setGoals(e.target.value)}
+                    rows={5}
+                    className="rounded-lg border border-white/10 bg-black/30 px-3 py-2 outline-none ring-[--color-accent] placeholder:text-white/40 focus:ring-2"
+                    placeholder="A few bullets are great—pages/sections, examples you like, etc."
+                  />
+                </div>
+                <div className="grid gap-2">
+                  <label htmlFor="timeline" className="text-sm">
+                    Timeline
+                  </label>
+                  <input
+                    id="timeline"
+                    type="text"
+                    value={timeline}
+                    onChange={(e) => setTimeline(e.target.value)}
+                    className="h-11 rounded-lg border border-white/10 bg-black/30 px-3 outline-none ring-[--color-accent] placeholder:text-white/40 focus:ring-2"
+                    placeholder="E.g., launch in ~2 weeks"
+                  />
+                </div>
+                <div className="pt-2">
+                  <button
+                    type="submit"
+                    className="inline-flex h-11 items-center justify-center rounded-full bg-[--color-accent] px-5 text-sm font-medium text-black transition hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[--color-accent] ring-offset-black"
+                  >
+                    Send
+                  </button>
+                </div>
+              </form>
+              <p className="mt-4 text-sm text-white/60">
+                Prefer email? Write to{" "}
+                <a
+                  href="mailto:shourya.batra@gmail.com"
+                  className="text-[--color-accent]"
+                >
+                  shourya.batra@gmail.com
+                </a>
+                .
+              </p>
+            </Card>
+          </MotionFade>
+        </Container>
+      </section>
+    </main>
+  );
 }
-
-
