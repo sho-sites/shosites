@@ -16,10 +16,11 @@ export default function AboutMePage() {
           <MotionFade inView={false}>
             <h1 className="text-3xl font-semibold tracking-tight">About me</h1>
             <p className="mt-2 max-w-2xl text-white/70">
-              Hey — I’m Shourya. I build fast, clean websites for clubs,
-              nonprofits, and businesses. I keep things simple: clear content,
-              slick design, and smooth micro‑interactions. Most projects take
-              about 1–2 weeks once content is ready.
+              Hey — I’m Shourya, a Sophomore at Homestead High School. I build
+              fast, clean websites for clubs, nonprofits, and businesses. I keep
+              things simple: clear content, slick design, and smooth
+              micro‑interactions. Most projects take about 1–2 weeks once
+              content is ready.
             </p>
           </MotionFade>
 
