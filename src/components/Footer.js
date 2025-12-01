@@ -19,6 +19,9 @@ export default function Footer() {
 					<Link href="/start" className="hover:text-white">
 						Start
 					</Link>
+					<Link href="/about-me" className="hover:text-white">
+						About Me
+					</Link>
 				</nav>
 			</Container>
 		</footer>

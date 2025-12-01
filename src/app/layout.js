@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "sho sites — Websites for orgs, clubs, and businesses",
   description:
-    "sho sites builds clean, fast, dark‑themed brochure sites for small teams, clubs, and nonprofits, for completely free.",
+    "sho sites builds clean, fast, themed brochure sites for small teams, clubs, and nonprofits, for completely free.",
   metadataBase: new URL("https://shosites.example"), // update on deploy
   openGraph: {
     title: "sho sites — Websites for orgs, clubs, and businesses",

@@ -10,6 +10,7 @@ const links = [
 	{ href: "/process", label: "Process" },
 	{ href: "/faq", label: "FAQ" },
 	{ href: "/start", label: "Start" },
+	{ href: "/about-me", label: "About Me" },
 ];
 
 export default function Navbar() {
