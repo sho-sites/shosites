@@ -11,7 +11,7 @@ export const metadata = {
 const faqs = [
   {
     q: "How much does it cost?",
-    a: "I build for completely free for community orgs, school clubs, and businesses. You will only pay for the domain, about $10/year.",
+    a: "I charge between $5 and $25 depending on the project's complexity. You'll still pay for the domain, about $10/year.",
   },
   {
     q: "How do updates work?",

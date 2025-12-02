@@ -14,7 +14,7 @@ export default function Home() {
           <MotionFade inView={false}>
             <div className="max-w-3xl">
               <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
-                Websites for orgs, clubs, and businesses, for completely free.
+                Websites for orgs, clubs, and businesses, $5–$25 depending on complexity.
               </h1>
               <p className="mt-5 text-lg text-white/70">
                 I build clean, fast, themed brochure sites that make it easy to
