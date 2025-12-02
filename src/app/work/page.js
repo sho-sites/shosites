@@ -8,6 +8,35 @@ export const metadata = {
     "Selected projects including Homestead CS Club, L.I.F.T., and a dark portfolio.",
 };
 
+const works = [
+  {
+    title: "Homestead CS Club",
+    description:
+      "Simple club site with sections for About, News, and Challenges.",
+    href: "https://www.hhscs.club/",
+    label: "hhscs.club ↗",
+  },
+  {
+    title: "L.I.F.T.",
+    description: "Bold hero, clear offerings, partner logo cloud layout.",
+    href: "https://www.lift-co.org/",
+    label: "lift-co.org ↗",
+  },
+  {
+    title: "Personal Site",
+    description:
+      "Dark theme portfolio with project tiles and micro‑interactions.",
+    href: "https://www.shouryabatra.com/",
+    label: "shouryabatra.com ↗",
+  },
+  {
+    title: "sho sites (this website!)",
+    description: "Simple, clean, and fast website for my own business.",
+    href: "https://shosites.vercel.app/",
+    label: "shosites.vercel.app ↗",
+  },
+];
+
 export default function WorkPage() {
   return (
     <main>
@@ -23,50 +52,22 @@ export default function WorkPage() {
           </MotionFade>
           <MotionFade delay={0.05} inView={false}>
             <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              <Card>
-                <h3 className="text-lg font-semibold">Homestead CS Club</h3>
-                <p className="mt-2 text-sm text-white/70">
-                  Simple club site with sections for About, News, and
-                  Challenges.
-                </p>
-                <a
-                  href="https://www.hhscs.club/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="mt-4 inline-block text-sm text-[--color-accent]"
-                >
-                  hhscs.club ↗
-                </a>
-              </Card>
-              <Card>
-                <h3 className="text-lg font-semibold">L.I.F.T.</h3>
-                <p className="mt-2 text-sm text-white/70">
-                  Bold hero, clear offerings, partner logo cloud layout.
-                </p>
-                <a
-                  href="https://www.lift-co.org/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="mt-4 inline-block text-sm text-[--color-accent]"
-                >
-                  lift-co.org ↗
-                </a>
-              </Card>
-              <Card>
-                <h3 className="text-lg font-semibold">Personal Site</h3>
-                <p className="mt-2 text-sm text-white/70">
-                  Dark theme portfolio with project tiles and
-                  micro‑interactions.
-                </p>
-                <a
-                  href="https://www.shouryabatra.com/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="mt-4 inline-block text-sm text-[--color-accent]"
-                >
-                  shouryabatra.com ↗
-                </a>
-              </Card>
+              {works.map((work) => (
+                <Card key={work.title}>
+                  <h3 className="text-lg font-semibold">{work.title}</h3>
+                  <p className="mt-2 text-sm text-white/70">
+                    {work.description}
+                  </p>
+                  <a
+                    href={work.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="mt-4 inline-block text-sm text-[--color-accent]"
+                  >
+                    {work.label}
+                  </a>
+                </Card>
+              ))}
             </div>
           </MotionFade>
         </Container>
