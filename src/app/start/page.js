@@ -12,21 +12,6 @@ export default function StartPage() {
   const [goals, setGoals] = useState("");
   const [timeline, setTimeline] = useState("");
 
-  function handleSubmit(e) {
-    e.preventDefault();
-    const subject = encodeURIComponent("sho sites project inquiry");
-    const body = encodeURIComponent(
-      [
-        `Name: ${name}`,
-        `Organization: ${org}`,
-        `Email: ${email}`,
-        `Goals: ${goals}`,
-        `Timeline: ${timeline}`,
-      ].join("\n")
-    );
-    window.location.href = `mailto:shourya.batra@gmail.com?subject=${subject}&body=${body}`;
-  }
-
   return (
     <main>
       <section>
@@ -42,13 +27,18 @@ export default function StartPage() {
           </MotionFade>
           <MotionFade delay={0.05} inView={false}>
             <Card className="mt-8">
-              <form onSubmit={handleSubmit} className="grid gap-5">
+              <form
+                action="https://formspree.io/f/xpwarqdd"
+                method="POST"
+                className="grid gap-5"
+              >
                 <div className="grid gap-2">
                   <label htmlFor="name" className="text-sm">
                     Name
                   </label>
                   <input
                     id="name"
+                    name="name"
                     type="text"
                     required
                     value={name}
@@ -63,6 +53,7 @@ export default function StartPage() {
                   </label>
                   <input
                     id="org"
+                    name="org"
                     type="text"
                     value={org}
                     onChange={(e) => setOrg(e.target.value)}
@@ -76,6 +67,7 @@ export default function StartPage() {
                   </label>
                   <input
                     id="email"
+                    name="email"
                     type="email"
                     required
                     value={email}
@@ -90,6 +82,7 @@ export default function StartPage() {
                   </label>
                   <textarea
                     id="goals"
+                    name="goals"
                     required
                     value={goals}
                     onChange={(e) => setGoals(e.target.value)}
@@ -104,6 +97,7 @@ export default function StartPage() {
                   </label>
                   <input
                     id="timeline"
+                    name="timeline"
                     type="text"
                     value={timeline}
                     onChange={(e) => setTimeline(e.target.value)}
