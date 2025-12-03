@@ -23,6 +23,13 @@ const works = [
     label: "lift-co.org ↗",
   },
   {
+    title: "Astrophysics Club",
+    description:
+      "Cosmic themed high school club website with all club information/socials.",
+    href: "https://astrophysics-club.vercel.app/",
+    label: "astrophysics-club.vercel.app ↗",
+  },
+  {
     title: "Personal Site",
     description:
       "Dark theme portfolio with project tiles and micro‑interactions.",
