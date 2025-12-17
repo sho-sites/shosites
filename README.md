@@ -1,36 +1,29 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# sho sites
 
-## Getting Started
+Website for sho sites — the small studio run by Shourya Batra that builds fast, clean brochure websites for orgs, clubs, and businesses ($5–$25 depending on complexity). Most projects take about 1–2 weeks once content is ready.
 
-First, run the development server:
+## What this site covers
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Offer: informational “brochure” sites that clarify who you are, what you do, where you are, and how to get in touch.
+- Scope: front-end marketing sites only; no online stores, payment flows, or heavy apps.
+- Approach: AI-assisted drafts refined by hand, mobile-first builds focused on clarity and speed.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Key pages
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- Home: positioning, selected work, process overview, scope note, and CTA to start.
+- Work: portfolio links (Homestead CS Club, L.I.F.T., Astrophysics Club, personal site, this site).
+- Process: plan → design → build → review → launch, plus a short client checklist.
+- Start: Formspree contact form for new projects and direct email.
+- FAQ: pricing, update workflow, scope fit, and the tech used.
+- About me: brief bio on Shourya and the tools he prefers.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Tech snapshot
 
-## Learn More
+- Framework: Next.js App Router with Tailwind CSS and Framer Motion helpers.
+- Structure: shared UI components in `src/components`; pages in `src/app`.
+- Hosting: built for Vercel deployment; Formspree handles project inquiries.
 
-To learn more about Next.js, take a look at the following resources:
+## Brand references
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Live site: https://shosites.vercel.app/
+- Contact: shourya.batra@gmail.com
