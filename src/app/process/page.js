@@ -64,7 +64,7 @@ export default function ProcessPage() {
                   <li>
                     GeneralCore content (if you have): services/offerings,
                     about, contact info, location/hours. Totally fine if you
-                    can't give this, I can find it, or design things for you!
+                    cannot give this, I can find it, or design things for you!
                   </li>
                   <li>Any links (socials, forms, documents)</li>
                   <li>

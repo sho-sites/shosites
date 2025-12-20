@@ -21,7 +21,7 @@ export default function StartPage() {
               Start a project
             </h1>
             <p className="mt-2 max-w-2xl text-white/70">
-              Share a few details—I'll reply with a checklist and quick next
+              Share a few details—I will reply with a checklist and quick next
               steps.
             </p>
           </MotionFade>
