@@ -42,6 +42,12 @@ const works = [
     href: "https://shosites.vercel.app/",
     label: "shosites.vercel.app ↗",
   },
+  {
+    title: "Loop Life",
+    description: "Light themed site for loop life business",
+    href: "loop-life-red.vercel.app",
+    label: "loop-life-red.vercel.app ↗",
+  },
 ];
 
 export default function WorkPage() {
