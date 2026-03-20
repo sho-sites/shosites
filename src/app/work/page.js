@@ -44,7 +44,7 @@ const works = [
   },
   {
     title: "Loop Life",
-    description: "Light themed site for loop life business",
+    description: "Light themed site for loop life non profit",
     href: "https://loop-life-bice.vercel.app/",
     label: "loop-life-bice.vercel.app ↗",
   },
